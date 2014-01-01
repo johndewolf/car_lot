@@ -1,3 +1,5 @@
+<h1>Add a Car:</h1>
+<p class="notice"><%= flash[:notice] %></p>
 <%= simple_form_for(@car) do |f| %>
   <% if @car.errors.any? %>
     <div id="error_explanation">
@@ -20,4 +22,4 @@
   <%= f.button :submit, 'Save Car' %>
 <% end %>
 
-<p class="notice"><%= flash[:notice] %></p>
+<%= link_to "Back to Car Inventory", cars_path %>

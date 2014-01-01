@@ -1,0 +1,13 @@
+<h1>Car Inventory:</h1>
+<%= link_to "Add a Car", new_car_path  %><br>
+<br>
+<% @cars.each do |car| %>
+  Make: <%= car.make %><br>
+  Model: <%= car.model %><br>
+  Year: <%= car.year %><br>
+  Color: <%= car.color %><br>
+  Mileage: <%= car.mileage %><br>
+  Description: <%= car.description %><br>
+  <br>
+<% end %>
+
